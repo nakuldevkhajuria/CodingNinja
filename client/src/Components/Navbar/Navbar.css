@@ -1,0 +1,53 @@
+.navbar-section{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.navbar-container{
+   color: grey;
+   font-weight: 600;
+}
+.navbar-content{
+    height: 57px;
+    max-width: 1125px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.main-logo a img{
+    width: 5rem;
+}
+.login-button{
+   background-color: rgb(250, 226, 230);
+    color: #f9601e;
+    font-size: .9rem;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 9px;
+    border: white;
+}
+.login-button:hover{
+    background-color: rgb(252, 185, 196);
+}
+
+.enrol-button{
+   
+    background-image: linear-gradient(
+        to right,orange,red
+    );
+    color: white;
+    font-size: .9rem;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 9px;
+    border: white;
+ 
+}
+.enrol-button:hover{
+    background-image: linear-gradient(
+        to right,red,orange
+    );
+}
