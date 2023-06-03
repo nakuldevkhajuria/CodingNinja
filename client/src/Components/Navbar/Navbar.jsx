@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Navbar.css'
 const Navbar = () => {
+    useEffect(() => {
+        fetch('http://localhost:4000/')
+          .then(response => response.json())
+          .then(data => {
+            // Handle the response data
+            console.log(data);
+          })
+          .catch(error => {
+            // Handle any errors
+            console.error(error);
+          });
+      }, []);
     return (
         <div className='navbar-section'>
             <div className="navbar-container">
@@ -21,7 +33,7 @@ const Navbar = () => {
                             alt="Ninjas Career Camp"
                             width="134"
                             height="30"
-                            class="nav-image  ng-lazyloaded"
+                            className="nav-image  ng-lazyloaded"
                             src="https://files.codingninjas.in/careercamp-12614.svg" />
                     </div>
                

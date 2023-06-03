@@ -1,10 +1,11 @@
 const express = require('express')
 const app = express();
-const router1 = require('./routes/home')
+const cors = require('cors')
+const router = require('./routes/MainRoute')
 
+app.use(cors())
+app.get('/',router)
 
-
-app.use('/',router1)
 
 //start the server
 const port = 4000
