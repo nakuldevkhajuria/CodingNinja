@@ -11,16 +11,17 @@ const Home = () => {
         <h3> NO MATTER WHAT IT TAKES! </h3>
         <div  className='home-box-content'>
           <div >
-            <img _ngcontent-serverapp-c114="" src="https://files.codingninjas.in/boxicon1-9659.svg" />
+            <img alt='box1' src="https://files.codingninjas.in/boxicon1-9659.svg" />
             <div > Content designed by IIT &amp; Stanford alumni  </div>
           </div>
           <div >
-            <img src="https://files.codingninjas.in/boxicon2-9658.svg" />
+            <img alt='box2' src="https://files.codingninjas.in/boxicon2-9658.svg" />
             <div > Instant 1:1 doubt resolution </div>
           </div>
           <div >
-            <img _ngcontent-serverapp-c114="" src="https://files.codingninjas.in/boxicon3-9657.svg" /><div> Practical learning with 100+ problems &amp; 10+ projects in each course </div></div></div>
+            <img alt='box3' src="https://files.codingninjas.in/boxicon3-9657.svg" /><div> Practical learning with 100+ problems &amp; 10+ projects in each course </div></div></div>
       </div>
+      <div className='section-title'>14,000+ CODING NINJAS TO INSPIRE YOU</div>
     </div>
   )
 }

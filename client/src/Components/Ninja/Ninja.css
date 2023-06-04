@@ -1,0 +1,36 @@
+.first-list li:nth-child(1){
+background: url(https://files.codingninjas.in/pareksha-manchanda-9862-1-1-9918-1-10357-17472.webp) no-repeat bottom right/182px 240px; background-color: var(--purple-40);
+
+}
+.first-list li:nth-child(2){
+    background: url(https://files.codingninjas.in/harsh-cn-10510-1-10512-17471.webp) no-repeat bottom 0 right -10px / 182px 240px,
+    url('https://files.codingninjas.com/vector-62-9991.png') no-repeat top 130px right 0,
+    url('https://files.codingninjas.com/group-40-9996.png') no-repeat bottom 0 right 40px,
+    var(--purple-50);
+    
+}
+.first-list li:nth-child(3){
+  background: url(https://files.codingninjas.com/satwika-bhattacharjee-9762-9857.webp) no-repeat bottom 0 right -10px / 182px 240px,
+    var(--purple-60);
+    }
+.first-list li:nth-child(4){
+background: url(https://files.codingninjas.com/rahul-9626-9859.webp) no-repeat bottom 0 right -10px / 182px 240px,
+    var(--blue-40);
+}
+.first-list li:nth-child(4){
+   background: url(https://files.codingninjas.in/richa-sharma-10960-_1_-17470.webp) no-repeat bottom 0 right -10px / 182px 240px,
+    var(--blue-50);
+    }
+.first-list{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+    @media (mix-width:764px) {
+        .first-list{
+            /* width: 100%;
+            display: table;
+            table-layout: fixed; */
+        }
+    }
