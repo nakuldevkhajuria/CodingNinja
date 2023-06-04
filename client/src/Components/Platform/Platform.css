@@ -1,0 +1,49 @@
+.platform-section{
+
+}
+.platform-container{
+    max-width: 1152px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.platform-content{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-flow: row wrap;
+}
+.platform-content div{
+    display: flex;
+   
+    color: white;
+ background-color: #1d195e;
+ width: 368px;
+ height: 294px;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ place-content: stretch center;
+
+}
+.platform-cards{
+    display: flex;
+    align-items: center;
+
+}
+.platform-cards div:nth-child(1){
+    margin-top: 2rem;
+    font-size: 4rem;
+}
+
+.platform-cards div:nth-child(4){
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+}
+.platform-cards img{
+    width: 170px;
+    height: 30px;
+    
+}
