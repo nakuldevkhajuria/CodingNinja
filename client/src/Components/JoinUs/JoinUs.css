@@ -10,3 +10,87 @@ height: 50px;
 .stories-button button  span {
    padding: 0 2rem;
 }
+.fang-section{
+    background: url(https://files.codingninjas.com/cdn-cgi/image/width=275/group-3429-9844.png) no-repeat bottom 0 left 0,linear-gradient(90.02deg,#343b89 -1.1%,#4d4899 99.97%);
+    height: 24rem;
+  
+}
+.fang-container{
+    max-width: 1152px;
+    display: flex;
+
+  margin: 0 auto;
+  
+  /* padding: 4rem; */
+
+}
+.fang-content{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    margin: 3rem auto;
+}
+.fang-content-box1{
+    width: 466px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+}
+.fang-content-box1 div:nth-child(1){
+    width: 136px;
+    height: 40px;
+    background: rgba(255,255,255,.2);
+    border-radius: 50px;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fang-content-box1 div:nth-child(2){
+    color: white;
+    padding-top: 32px;
+    padding-bottom:16px;
+font: 700 32px/42px Mulish,Roboto,Helvetica Neue,sans-serif;
+}
+.fang-content-box1 div:nth-child(3){
+    color: white;
+font: 600 16px/24px Mulish,Roboto,Helvetica Neue,sans-serif;
+}
+.fang-content-box2{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 13rem; */
+}
+.fang-content-item1 img{
+    height: 150px;
+    width: 132px;
+    padding: 0 8px!important;
+}
+.fang-content-item1 div{
+    position: relative;
+
+    color: white;
+bottom: 55%;
+
+}
+.fang-content-item1 div :nth-child(1){
+    font-size: 2.2rem;
+   
+    }
+.fang-content-item1 div :nth-child(2){
+font-size: .8rem;
+margin-top: 10px;
+}
+.fang-two-boxes{
+    position: relative;
+    bottom: 7rem;
+    left: 5rem;
+}
+.companies-name{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
