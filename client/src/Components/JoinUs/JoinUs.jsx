@@ -82,6 +82,7 @@ const JoinUs = () => {
                     </div>
                 </div>
             </div>
+            <div className='placement-report'><button>Download Placement Report</button></div>
 
         </div>
     )

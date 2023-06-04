@@ -89,8 +89,32 @@ margin-top: 10px;
     bottom: 7rem;
     left: 5rem;
 }
+.companies-content h2{
+    text-align: center;
+    font-size: 29px;
+    letter-spacing: .5px;
+    padding: 24px;
+    font-weight: 400;
+}
 .companies-name{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 1rem;
+    gap: 4rem;
+}
+.placement-report{
+    margin: 3rem auto;
+
+   
+}
+.placement-report button{
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    background-color: rgb(221, 167, 181);
+    border: 0;
+    border-radius: 10px;
+}
+.placement-report button:hover{
+    background-color: rgb(165, 102, 123);
 }
