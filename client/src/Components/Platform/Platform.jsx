@@ -35,7 +35,7 @@ const Platform = () => {
             <div _ngcontent-serverapp-c110="">
               <div _ngcontent-serverapp-c110="" class="headbar-head">Guided program</div>
               <div _ngcontent-serverapp-c110="" class="meter">
-                <span _ngcontent-serverapp-c110="" class="meter-inner">
+                <span _ngcontent-serverapp-c110="" class ="meter-inner">
                   <span _ngcontent-serverapp-c110="" class="progress"></span>
                 </span>
               </div>
@@ -46,7 +46,7 @@ const Platform = () => {
               <div _ngcontent-serverapp-c110="" class="headbar-head selected-headbar">Doubt Resolution</div>
               <div _ngcontent-serverapp-c110="" class="meter selected-meter">
                 <span _ngcontent-serverapp-c110="" class="meter-inner">
-                  <span _ngcontent-serverapp-c110="" class="progress"></span>
+                  <span  class="progress"></span>
                 </span>
               </div>
             </div>
