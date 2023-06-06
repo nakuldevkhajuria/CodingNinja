@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <div className='home-section'>
       <Navbar />
+<div className='animation-grid-section'>
 
+</div>
       <div className='home-box' >
         <h2 > If you have the courage and the commitment to learn coding, then Coding Ninjas will empower you. </h2>
         <h3> NO MATTER WHAT IT TAKES! </h3>

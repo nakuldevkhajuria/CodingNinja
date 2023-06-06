@@ -13,7 +13,7 @@ const Platform = () => {
                     </div>
                     <div className='platform-cards'>
                         <div>4.9</div>
-                        <img lazyload="https://files.codingninjas.in/stars-9613.svg" class="  ng-lazyloaded" src="https://files.codingninjas.in/stars-9613.svg" />
+                        <img alt='stars' lazyload="https://files.codingninjas.in/stars-9613.svg" class="  ng-lazyloaded" src="https://files.codingninjas.in/stars-9613.svg" />
                         <div>100+ reviews</div>
                         <div>Facebook</div>
                     </div>
