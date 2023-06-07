@@ -1,67 +1,9 @@
 
-import { useEffect, useRef } from 'react'
+import Typewriter from "typewriter-effect";
 import Navbar from '../Navbar/Navbar'
 import './Home.css'
 const Home = () => {
-  const typewriterElement = useRef(null);
-
-  useEffect(() => {
-    // Define the TxtType class
-    class TxtType {
-      constructor(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.isDeleting = false;
-        this.tick();
-      }
-
-      tick() {
-        const i = this.loopNum % this.toRotate.length;
-        const fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-        const that = this;
-        let delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) {
-          delta /= 2;
-        }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-          delta = this.period;
-          this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-          this.isDeleting = false;
-          this.loopNum++;
-          delta = 500;
-        }
-
-        setTimeout(() => {
-          that.tick();
-        }, delta);
-      }
-    }
-
-    // Initialize the typewriter effect
-    const elements = document.getElementsByClassName('typewrite');
-    for (let i = 0; i < elements.length; i++) {
-      const toRotate = elements[i].getAttribute('data-type');
-      const period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
-    }
-  }, []);
+ 
 
   return (
     <div className='home-section'>
@@ -72,17 +14,39 @@ const Home = () => {
             <div className='animation-grid-content-1' >
              
                 <div >
-                  <h1>
+                  {/* <h1>
                     <div
 
                       className="typewrite"
                       data-period="2000"
-                      data-type='["Chasing Jobs? Let the Job chase you.", "World has enough coders", "Be more than a coder"]'
+                      data-type='["", "World has enough coders", "Be more than a coder"]'
                       ref={typewriterElement}
                     >
                       <span className="wrap"></span>
                     </div>
-                  </h1>
+                  </h1> */}
+              
+            <Typewriter
+ 
+                onInit={(typewriter) => {
+                    typewriter
+                        .typeString("Chasing Jobs? Let the Job chase you.")
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("World has enough coders")
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("Be more than a coder")
+                        .pauseFor(1000)
+                        .deleteAll()
+                      //   .callFunction(() => {
+                      //     // Call a function to start the typewriter again
+                      //     typewriter.start();
+                      // })
+                        .start();
+                }}
+            />
+      
 
                 
                 <h1>Be a Coding Ninja</h1>
