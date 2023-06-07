@@ -14,7 +14,7 @@ function App() {
     {/* <Ninja/> */}
     <JoinUs />
     <Platform/>
-    {/* <WorkExperience/> */}
+    <WorkExperience/>
     </div>
   );
 }

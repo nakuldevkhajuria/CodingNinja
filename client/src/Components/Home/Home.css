@@ -50,18 +50,14 @@ font-weight: 600;
     white-space: nowrap;
 padding: .8rem 5rem;
 margin: 2rem 0;
-background-image: linear-gradient(
-    to right, orange 0%,red 100%
-);
+background-image: linear-gradient(90deg,#f96b24 0%,#ff9100 100%);
 background-color: orange;
 border: 0;
 border-radius: 7px;
 }
 
 .animation-grid-content-1  div:nth-child(3) button:hover{
-background-image: linear-gradient(
-    to right, red 100%, orange  0%
-);
+  background-image: linear-gradient(90deg ,#ff9100 0%,#f96b24 100%);
 }
 
 .typewrite > .wrap {
@@ -101,7 +97,7 @@ background-image: linear-gradient(
     top: 24rem; */
     /* transform: translateY(24rem); */
     color: white;
-    margin: -7rem auto 0 auto ;
+    margin: -6rem auto 0 auto ;
     display: flex;
     flex-direction: column;
     max-width: 900px;
