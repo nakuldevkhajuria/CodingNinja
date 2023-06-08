@@ -4,6 +4,8 @@ const WorkExperience = () => {
 
   const [showButton1, setShowButton1] = useState(false);
   const [showButton2, setShowButton2] = useState(false);
+  const [showCourses1, setShowCourses1] = useState(false);
+  
   const handleCardClick1 = () => {
     setShowButton1(true);
     setShowButton2(false);
