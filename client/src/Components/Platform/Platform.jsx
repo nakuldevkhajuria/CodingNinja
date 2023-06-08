@@ -24,7 +24,7 @@ const Platform = () => {
                         <div>Quora</div>
                     </div>
                 </div>
-                <div _ngcontent-serverapp-c110="" class="platform width-container zen-grid-section-v2 ng-star-inserted">
+                {/* <div _ngcontent-serverapp-c110="" class="platform width-container zen-grid-section-v2 ng-star-inserted">
   <div _ngcontent-serverapp-c110="" class="hex">
     <div _ngcontent-serverapp-c110="" class="hex-content">
       <div _ngcontent-serverapp-c110="" class="hex-head zen-heading-2 pb-8">A One stop Platform</div>
@@ -116,7 +116,7 @@ const Platform = () => {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
 
             </div>

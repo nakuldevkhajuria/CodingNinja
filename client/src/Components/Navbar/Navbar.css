@@ -24,10 +24,11 @@
    background-color: rgb(250, 226, 230);
     color: #f9601e;
     font-size: .9rem;
-    height: 3rem;
-    width: 8rem;
+    height: 2.7rem;
+    width: 6rem;
     border-radius: 9px;
     border: white;
+    margin-right: -2.8rem;
 }
 .login-button:hover{
     background-color: rgb(252, 185, 196);
@@ -35,19 +36,15 @@
 
 .enrol-button{
    
-    background-image: linear-gradient(
-        to right,orange,red
-    );
+    background-image: linear-gradient(90deg,#f96b24 0%,#ff9100 100%);
     color: white;
     font-size: .9rem;
     height: 3rem;
-    width: 8rem;
+    width: 7rem;
     border-radius: 9px;
     border: white;
  
 }
 .enrol-button:hover{
-    background-image: linear-gradient(
-        to right,red,orange
-    );
+    background-image: linear-gradient(90deg, #ff9100 0%,#f96b24 100%);
 }

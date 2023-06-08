@@ -14,18 +14,6 @@ const Home = () => {
             <div className='animation-grid-content-1' >
 
               <div >
-                {/* <h1>
-                    <div
-
-                      className="typewrite"
-                      data-period="2000"
-                      data-type='["", "World has enough coders", "Be more than a coder"]'
-                      ref={typewriterElement}
-                    >
-                      <span className="wrap"></span>
-                    </div>
-                  </h1> */}
-
                 <Typewriter
 
                   onInit={(typewriter) => {
@@ -64,7 +52,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div></div>
+            <div className='animation-grid-content-2'></div>
           </div>
         </div>
       </div>

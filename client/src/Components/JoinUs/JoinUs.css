@@ -1,18 +1,22 @@
 .stories-button button {
 color: white;
 background-image: linear-gradient(90deg,#f96b24 0%,#ff9100 100%);
-font-size: 1.3rem;
+font-size: .9rem;
 border: 0px;
 border-radius: 5px;
-margin: 5rem auto 3rem auto;
-height: 50px;
+margin: 3rem auto 3rem auto;
+height: 48px;
 white-space: nowrap;
+cursor: pointer;
 }
 .stories-button button:hover {
     background-image: linear-gradient(90deg ,#ff9100 100%,#f96b24 0%);
 }
 .stories-button button  span {
-   padding: 0 2rem;
+   
+   padding: 0 1.7rem;
+
+   font: 600 16px/22px Mulish,Roboto,Helvetica Neue,sans-serif;
 }
 .fang-section{
 background-color: red;
@@ -131,12 +135,15 @@ margin-top: 10px;
    
 }
 .placement-report button{
-    font-size: 1.2rem;
+    color: #f75814;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 48px;
     padding: 1rem 3rem;
-    background-color: rgb(221, 167, 181);
+      background-color: #feeee5;;
     border: 0;
     border-radius: 10px;
 }
 .placement-report button:hover{
-    background-color: rgb(165, 102, 123);
+    background-color: #f5c7b3;
 }
