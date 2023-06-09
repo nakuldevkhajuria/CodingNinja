@@ -1,9 +1,12 @@
 
 import './App.css';
+// import { MyForm } from './Components/Form/MyForm';
 import Home from './Components/Home/Home';
 import JoinUs from './Components/JoinUs/JoinUs';
 // import Ninja from './Components/Ninja/Ninja';
 import Platform from './Components/Platform/Platform';
+
+
 import WorkExperience from './Components/WorkExperience/WorkExperience';
 
 function App() {
@@ -15,6 +18,7 @@ function App() {
     <JoinUs />
     <Platform/>
     <WorkExperience/>
+ 
     </div>
   );
 }
