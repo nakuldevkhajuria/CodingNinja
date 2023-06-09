@@ -1,16 +1,17 @@
 const express = require('express')
-require('dotenv').config();
-
-const cors = require('cors')
-const mainRoute = require('./routes/MainRoute');
 const dbConnect = require('./config/dbConnect');
+const dotenv = require('dotenv').config();
+
+// const cors = require('cors')
+const mainRoute = require('./routes/MainRoute');
+
 
 const app = express();
 app.use(express.json())
 
 //use cors, and mainRoute
 // app.use(cors())
-app.get('/api/user',mainRoute)
+app.use('/api/user',mainRoute)
 // app.get('/api/user/helo',(req,res)=>{
 //     res.send('helo')
 // })

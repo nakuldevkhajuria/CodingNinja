@@ -1,4 +1,7 @@
 const asyncHandler = require('express-async-handler')
+const UserModel = require('../models/UserModel')
+const { generateToken } = require("../config/jwtoken.js");
+
 
 const createUser = asyncHandler(async (req, res) => {
     const email = req.body.email;
@@ -23,15 +26,12 @@ const loginUser = asyncHandler(
 
         if (findUser && (await findUser.isPasswordMatched(password))) {
 
-            const refreshToken = await generateRefreshToken(findUser?._id)
-            const updateUser = await UserModel.findByIdAndUpdate(findUser?._id,
-                { refreshToken: refreshToken },
-                { new: true })
+        
+            // const updateUser = await UserModel.findByIdAndUpdate(findUser?._id,
+            //     { refreshToken: refreshToken },
+            //     { new: true })
                 
-            res.cookie('refreshToken', refreshToken, {
-                httpOnly: true,
-                maxAge: 72 * 60 * 60 * 1000
-            })
+    
 
             res.json({
                 _id: findUser._id,
