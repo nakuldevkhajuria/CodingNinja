@@ -1,14 +1,17 @@
 const express = require('express')
-const app = express();
-const cors = require('cors')
-const router = require('./routes/MainRoute')
+require('dotenv').config();
 
+const cors = require('cors')
+const mainRoute = require('./routes/MainRoute')
+
+const app = express();
+//use cors, and mainRoute
 app.use(cors())
-app.get('/',router)
+app.get('/',mainRoute)
 
 
 //start the server
-const port = 4000
-app.listen(port,()=>{
-    console.log(`server is connected on ${port}`)
+const PORT = process.env.PORT;
+app.listen(PORT,()=>{
+    console.log(`server is connected on ${PORT}`)
 })
