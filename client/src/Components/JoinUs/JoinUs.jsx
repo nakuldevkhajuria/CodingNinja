@@ -62,20 +62,20 @@ const JoinUs = () => {
             <div className='companies-section'>
                 <div className="companies-container">
                     <div className="companies-content">
-                        <h2 _ngcontent-serverapp-c107="" class="top-text"> Our students are placed at </h2>
+                        <h2 > Our students are placed at </h2>
 
                         <div className='companies-name'>
-                            <img  loading="lazy" alt="Google" srcset="" src="https://files.codingninjas.in/google-9542.svg" class="image-loaded"/>
-                            <img loading="lazy" alt="Microsoft" srcset="" src="https://files.codingninjas.in/microsoft-9541.svg" class="image-loaded" />
-                            <img loading="lazy" alt="Adobe" srcset="" src="https://files.codingninjas.in/adobe-9540.svg" class="image-loaded" />
-                            <img loading="lazy" alt="Walmart" srcset="" src="https://files.codingninjas.in/walmart-9539.svg" class="image-loaded" />
-                            <img loading="lazy" alt="Amazon" srcset="" src="https://files.codingninjas.in/amazon-9538.svg" class="image-loaded" />
-                            <img loading="lazy" alt="Oyo" srcset="" src="https://files.codingninjas.in/oyo-9537.svg" class="image-loaded" />
-                            <img loading="lazy" alt="Flipkart" srcset="" src="https://files.codingninjas.in/flipkart-9536.svg" class="image-loaded" />
-                            <img loading="lazy" alt="MorganStanley" srcset="" src="https://files.codingninjas.in/morganstanley-9535.svg" class="image-loaded" />
-                            <img loading="lazy" alt="Samsung" srcset="" src="https://files.codingninjas.in/samsung-9534.svg" class="image-loaded" />
-                            <img loading="lazy" alt="Expedia" srcset="" src="https://files.codingninjas.in/expedia-9533.svg" class="image-loaded" />
-                            <img loading="lazy" alt="Facebook" srcset="" src="https://files.codingninjas.in/facebook-9532.svg" class="image-loaded" />
+                            <img  loading="lazy" alt="Google" src="https://files.codingninjas.in/google-9542.svg" />
+                            <img loading="lazy" alt="Microsoft" src="https://files.codingninjas.in/microsoft-9541.svg"  />
+                            <img loading="lazy" alt="Adobe" src="https://files.codingninjas.in/adobe-9540.svg" />
+                            <img loading="lazy" alt="Walmart" src="https://files.codingninjas.in/walmart-9539.svg" />
+                            <img loading="lazy" alt="Amazon" src="https://files.codingninjas.in/amazon-9538.svg" />
+                            <img loading="lazy" alt="Oyo" src="https://files.codingninjas.in/oyo-9537.svg" />
+                            <img loading="lazy" alt="Flipkart" src="https://files.codingninjas.in/flipkart-9536.svg" />
+                            <img loading="lazy" alt="MorganStanley" src="https://files.codingninjas.in/morganstanley-9535.svg" />
+                            <img loading="lazy" alt="Samsung" src="https://files.codingninjas.in/samsung-9534.svg" />
+                            <img loading="lazy" alt="Expedia" src="https://files.codingninjas.in/expedia-9533.svg" />
+                            <img loading="lazy" alt="Facebook" src="https://files.codingninjas.in/facebook-9532.svg" />
 
                         </div>
 

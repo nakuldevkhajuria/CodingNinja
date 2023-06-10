@@ -1,18 +1,7 @@
-import React, { useEffect } from 'react'
+
 import './Navbar.css'
 const Navbar = () => {
-    useEffect(() => {
-        fetch('http://localhost:4000/')
-          .then(response => response.json())
-          .then(data => {
-            // Handle the response data
-            console.log(data);
-          })
-          .catch(error => {
-            // Handle any errors
-            console.error(error);
-          });
-      }, []);
+ 
     return (
         <div className='navbar-section'>
             <div className="navbar-container">
@@ -36,17 +25,17 @@ const Navbar = () => {
                             className="nav-image  ng-lazyloaded"
                             src="https://files.codingninjas.in/careercamp-12614.svg" />
                     </div>
-               
+                    <a href="#work-box">
                     <button className='login-button'>
                          <span>Login </span>
                        </button>
-                       
+                       </a>
                   
-              
-                       <button className='enrol-button'>
+              <a href="#work-box">
+                       <button className='enrol-button'> 
                          <span> Enrol Now </span>
                        </button>
-                      
+                       </a>
                   
                           
                      
