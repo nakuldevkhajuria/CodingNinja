@@ -105,6 +105,7 @@ const [formToggle,setFormToggle] = useState(true)
             <h4>What is your work experience?</h4>
             <span>this will help us recommend the best programs for you.</span>
             <div className="work-content">
+              <div style={{display:'flex',flexDirection:'column'}}>
               <div className='work-content-box' id='work-box' onClick={handleCardClick1}>
                 <div >
                   <img height="130" width="124" alt="card-img-name" src="https://files.codingninjas.com/student-24426.png" />
@@ -117,10 +118,12 @@ const [formToggle,setFormToggle] = useState(true)
 
               </div>
               {showButton1 && (
-                  <button id="showButton" style={{ color: 'green' }} onClick={handleShowForm}>
+                  <button id="showButton"  onClick={handleShowForm}>
                    Confirm Selection
                   </button>
                 )}
+                </div>
+                <div style={{display:'flex',flexDirection:'column'}}>
               <div className='work-content-box' id='work-box' onClick={handleCardClick2}>
                 <div >
                   <img _ngcontent-serverapp-c69="" height="130" width="124" alt="card-img-name" src="https://files.codingninjas.com/professional-24427.png" />
@@ -130,8 +133,10 @@ const [formToggle,setFormToggle] = useState(true)
                   <div >Designed as per college <br /> student schedule</div>
 
                 </div>
+              
+                </div>
                 {showButton2 && (
-                  <button id="showButton" style={{ color: 'green' }} onClick={handleShowForm}>
+                  <button id="showButton"  onClick={handleShowForm}>
                         Confirm Selection
                   </button>
                 )}
