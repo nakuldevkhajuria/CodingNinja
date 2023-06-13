@@ -15,6 +15,7 @@
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
+    
 
 }
 .main-logo a img{
@@ -28,7 +29,7 @@
     width: 6rem;
     border-radius: 9px;
     border: white;
-    margin-right: -2.8rem;
+    /* margin-right: -2.8rem; */
 }
 .login-button:hover{
     background-color: rgb(252, 185, 196);
@@ -47,4 +48,16 @@
 }
 .enrol-button:hover{
     background-image: linear-gradient(90deg, #ff9100 0%,#f96b24 100%);
+}
+.small-navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    max-width: 1125px;
+}
+@media (max-width:900px) {
+    .navbar-content{
+        display: none;
+    }
 }
