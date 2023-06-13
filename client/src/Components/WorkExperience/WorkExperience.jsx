@@ -12,7 +12,7 @@ const WorkExperience = () => {
   });
 
   const handleSubmitLogin = (event) => {
-    // event.preventDefault(); // Prevents the default form submission behavior
+    event.preventDefault(); // Prevents the default form submission behavior
 
     // Make the HTTP request
     fetch('http://localhost:4000/api/user/login', {
@@ -34,7 +34,7 @@ const WorkExperience = () => {
   };
 
   const handleSubmitRegister = (event) => {
-    // event.preventDefault(); // Prevents the default form submission behavior
+    event.preventDefault(); // Prevents the default form submission behavior
 
     // Make the HTTP request
     fetch('http://localhost:4000/api/user/register', {
@@ -48,7 +48,18 @@ const WorkExperience = () => {
       .then((data) => {
         // Handle the response from the server
         console.log(data);
-        handleFormLogin();
+        setShowSuccessAnimation(true);
+        // Reset the form data
+        setFormData({
+          firstname: '',
+          lastname: '',
+          email: '',
+          mobile: '',
+          password: ''
+        });
+        setTimeout(() => {
+          setShowSuccessAnimation(false);
+        }, 3000); // Change the duration (in milliseconds) as needed
       })
       .catch((error) => {
         // Handle any errors
@@ -63,6 +74,14 @@ const WorkExperience = () => {
       [name]: value
     }));
   };
+
+  const [showSuccessAnimation, setShowSuccessAnimation] = useState(false);
+  //after we click on signup
+
+  // setTimeout(() => {
+  //   setShowSuccessAnimation(false);
+  // }, 5000); // Change the duration (in milliseconds) as needed
+  
 
 const [formToggle,setFormToggle] = useState(true)
   const [showButton1, setShowButton1] = useState(false);
@@ -178,7 +197,14 @@ const [formToggle,setFormToggle] = useState(true)
              <button className="form-button" type="submit">Login</button>
            </form>
 }
-      { !formToggle &&
+{ !formToggle && showSuccessAnimation && (
+  <div className="success-animation">
+    <p>You have successfully registered!</p>
+  </div>
+)}
+      { 
+      
+      !formToggle &&
              <form className="enrollment-form" onSubmit={handleSubmitRegister}>
              <input
                className="form-input"

@@ -191,6 +191,27 @@ text-align: left;
   .option-button:focus {
     outline: none;
   }
+
+  @keyframes successAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .success-animation {
+    animation: successAnimation 1s ease-in-out;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
   
   
   
