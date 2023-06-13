@@ -45,9 +45,28 @@ const Navbar = () => {
                 </div>
 
                 <div className='small-navbar-content'>
-                    <button>
-                        click to open
-                    </button>
+                    <div className="dropdown">
+                        <button className="dropbtn">Dropdown</button>
+                        
+                        <div className="dropdown-content">
+                            <a href="/">Courses</a>
+                            <a href="/">Scholorship</a>
+                            <a href="/">Practice</a>
+
+                            <a href="#work-box">
+                                <button className='login-button'>
+                                    <span>Login </span>
+                                </button>
+                            </a>
+
+                            <a href="#work-box">
+                                <button className='enrol-button'>
+                                    <span> Enroll Now </span>
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
                     <div className="main-logo">
                         <a href="/">
                             <img
