@@ -43,15 +43,8 @@ background-color: red;
     gap: 6rem;
     margin: 1rem auto;
 }
-@media (max-width:800px) {
-    .fang-content{
-       
-     
-        flex-direction: row;
-      
-        margin: 3rem auto;
-    }
-}
+
+
 .fang-content-box1{
     /* width: 466px; */
     display: flex;
@@ -146,4 +139,29 @@ margin-top: 10px;
 }
 .placement-report button:hover{
     background-color: #f5c7b3;
+}
+
+
+@media (max-width:900px) {
+    .fang-content{
+       
+     
+        flex-direction: row;
+      
+        margin: 3rem auto;
+    }
+    .fang-section{
+        max-height: 40rem;
+    }
+    .fang-content{
+      
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fang-content-box1{
+      justify-content: center;
+      align-items: center;
+     
+    }
 }

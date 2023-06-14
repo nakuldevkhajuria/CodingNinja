@@ -15,7 +15,7 @@ const WorkExperience = () => {
     event.preventDefault(); // Prevents the default form submission behavior
 
     // Make the HTTP request
-    fetch('http://localhost:4000/api/user/login', {
+    fetch('https://coding-ninja-backend.vercel.app/api/user/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ const WorkExperience = () => {
     event.preventDefault(); // Prevents the default form submission behavior
 
     // Make the HTTP request
-    fetch('http://localhost:4000/api/user/register', {
+    fetch('https://coding-ninja-backend.vercel.app/api/user/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -184,6 +184,7 @@ const [formToggle,setFormToggle] = useState(true)
                value={formData.email}
                onChange={handleChange}
                placeholder="Email"
+               required
              />
              
              <input
@@ -193,6 +194,7 @@ const [formToggle,setFormToggle] = useState(true)
                value={formData.password}
                onChange={handleChange}
                placeholder="Password"
+               required
              />
              <button className="form-button" type="submit">Login</button>
            </form>
@@ -213,6 +215,7 @@ const [formToggle,setFormToggle] = useState(true)
                value={formData.firstname}
                onChange={handleChange}
                placeholder="First Name"
+               required
              />
              <input
                className="form-input"
@@ -229,6 +232,7 @@ const [formToggle,setFormToggle] = useState(true)
                value={formData.email}
                onChange={handleChange}
                placeholder="Email"
+               required
              />
              <input
                className="form-input"
@@ -237,6 +241,7 @@ const [formToggle,setFormToggle] = useState(true)
                value={formData.mobile}
                onChange={handleChange}
                placeholder="Mobile"
+               required
              />
              <input
                className="form-input"
@@ -245,6 +250,7 @@ const [formToggle,setFormToggle] = useState(true)
                value={formData.password}
                onChange={handleChange}
                placeholder="Password"
+               required
              />
              <button className="form-button" type="submit">SignUp</button>
            </form>
@@ -252,7 +258,7 @@ const [formToggle,setFormToggle] = useState(true)
            </div>
           )}
         </div>
-      </div>
+      </div><div class="all"><img src="https://files.codingninjas.in/faded-expore-section-24216.svg" alt="all courses"/></div>
     </div>
   )
 }
