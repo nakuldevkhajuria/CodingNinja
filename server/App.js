@@ -7,10 +7,11 @@ const mainRoute = require('./routes/MainRoute');
 
 
 const app = express();
+app.use(cors({ origin: '*' }));
 app.use(express.json())
 
 //use cors, and mainRoute
-app.use(cors())
+
 app.use('/api/user',mainRoute)
 // app.get('/api/user/helo',(req,res)=>{
 //     res.send('helo')
