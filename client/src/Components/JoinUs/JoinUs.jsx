@@ -2,7 +2,7 @@ import React from 'react'
 import './JoinUs.css'
 const JoinUs = () => {
     return (
-        <div>
+        <div >  <div className='section-title'>14,000+ CODING NINJAS TO INSPIRE YOU</div>
             <div className='stories-button'>
                 <button>
                     <span>

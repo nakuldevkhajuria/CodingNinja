@@ -8,6 +8,7 @@ margin: 3rem auto 3rem auto;
 height: 48px;
 white-space: nowrap;
 cursor: pointer;
+
 }
 .stories-button button:hover {
     background-image: linear-gradient(90deg ,#ff9100 100%,#f96b24 0%);
@@ -140,9 +141,33 @@ margin-top: 10px;
 .placement-report button:hover{
     background-color: #f5c7b3;
 }
-
+.section-title{
+ 
+    color: #292a31;
+    font-family: Helvetica,Arial,sans-serif;
+      line-height: 42px;
+  margin-top: 6rem;
+      
+      font-weight: 500;
+      font-size: 32px;
+  }
 
 @media (max-width:900px) {
+    .fang-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .section-title{
+        margin-top: 0;
+    }
+    .stories-button button{
+  min-width: 5rem;
+    }
+    .stories-button button span{
+    padding: 0;
+   
+    }
+
     .fang-content{
        
      
@@ -151,7 +176,7 @@ margin-top: 10px;
         margin: 3rem auto;
     }
     .fang-section{
-        max-height: 40rem;
+        max-height: 48rem;
     }
     .fang-content{
       
@@ -162,6 +187,12 @@ margin-top: 10px;
     .fang-content-box1{
       justify-content: center;
       align-items: center;
+      text-align: center;
      
     }
-}
+    .fang-two-boxes{
+        bottom: 5rem;
+        left: 0rem;
+    }
+} 
+

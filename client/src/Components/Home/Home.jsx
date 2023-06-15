@@ -52,7 +52,9 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className='animation-grid-content-2'></div>
+            <div className='animation-grid-content-2'>
+            <img id="animation-intro" src="https://files.codingninjas.in/438375-17407.webp" alt="Welcome Image..."/>
+            </div>
           </div>
         </div>
       </div>
@@ -72,7 +74,7 @@ const Home = () => {
             <div >
               <img alt='box3' src="https://files.codingninjas.in/boxicon3-9657.svg" /><div> Practical learning with 100+ problems &amp; 10+ projects in each course </div></div></div>
         </div></div>
-      <div className='section-title'>14,000+ CODING NINJAS TO INSPIRE YOU</div>
+    
     </div>
   )
 }

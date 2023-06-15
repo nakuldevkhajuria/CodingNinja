@@ -209,7 +209,7 @@ const [formToggle,setFormToggle] = useState(true)
            </div>
           )}
         </div>
-      </div><div class="all"><img src="https://files.codingninjas.in/faded-expore-section-24216.svg" alt="all courses"/></div>
+      </div><div class="all-courses"><img src="https://files.codingninjas.in/faded-expore-section-24216.svg" alt="all courses"/></div>
     </div>
   )
 }

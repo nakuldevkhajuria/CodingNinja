@@ -21,7 +21,7 @@ function App() {
     <Platform/>
     <WorkExperience/>
  <AllCourses/>
- <News/>
+ {/* <News/> */}
     </div>
   );
 }

@@ -203,8 +203,8 @@ const Navbar = () => {
                                 </button>
                             </a>
                         }
-<a href="#hell">helllo</a>
-                        <a href="#work-box">
+
+                        <a href="#hell">
                             <button className='enrol-button'>
                                 <span> Enroll Now </span>
                             </button>

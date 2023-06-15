@@ -28,7 +28,7 @@
 display: flex;
     gap: 2rem;
     text-align: center;
-    flex-flow: row wrap;
+
     /* column-gap: 46px!important; */
     margin: 2rem auto;
 }
@@ -212,6 +212,23 @@ text-align: left;
     border-radius: 4px;
   }
   
+  @media (max-width:800px) {
+    .work-section{
+      height: 53rem;
+    }
+    .work-container{
+    
+    }
+    .work-content{
+      /* text-align: center; */
+      flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    .all-courses{
+      display: none;
+    }
+  }
   
   
   
