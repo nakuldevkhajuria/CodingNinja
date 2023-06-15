@@ -11,33 +11,13 @@ const WorkExperience = () => {
     password: ''
   });
 
-  const handleSubmitLogin = (event) => {
-    event.preventDefault(); // Prevents the default form submission behavior
-
-    // Make the HTTP request
-    fetch('https://coding-ninja-backend.vercel.app/api/user/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        // Handle the response from the server
-        console.log(data);
-      })
-      .catch((error) => {
-        // Handle any errors
-        console.error(error);
-      });
-  };
 
   const handleSubmitRegister = (event) => {
     event.preventDefault(); // Prevents the default form submission behavior
 
     // Make the HTTP request
-    fetch('https://coding-ninja-backend.vercel.app/api/user/register', {
+    // fetch('https://coding-ninja-backend.vercel.app/api/user/register', {
+      fetch('http://localhost:4000/api/user/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -78,9 +58,7 @@ const WorkExperience = () => {
   const [showSuccessAnimation, setShowSuccessAnimation] = useState(false);
   //after we click on signup
 
-  // setTimeout(() => {
-  //   setShowSuccessAnimation(false);
-  // }, 5000); // Change the duration (in milliseconds) as needed
+
   
 
 const [formToggle,setFormToggle] = useState(true)
@@ -89,10 +67,7 @@ const [formToggle,setFormToggle] = useState(true)
 
   // const [showCourses1, setShowCourses1] = useState(false);
 
-  const handleFormLogin = ()=>{
-    setFormToggle(true)
-  
-  }
+ 
   const handleFormSignup = ()=>{
     setFormToggle(false)
   
@@ -171,34 +146,10 @@ const [formToggle,setFormToggle] = useState(true)
             X
           </button>
           <div className="options-container">
-        <button className="option-button"  onClick={ handleFormLogin} >Login</button>
+        {/* <button className="option-button"  onClick={ handleFormLogin} >Login</button> */}
         <button className="option-button"  onClick={ handleFormSignup}> Sign Up</button>
       </div>
-      { formToggle &&
-             <form className="enrollment-form" onSubmit={handleSubmitLogin}>
-         
-             <input
-               className="form-input"
-               type="email"
-               name="email"
-               value={formData.email}
-               onChange={handleChange}
-               placeholder="Email"
-               required
-             />
-             
-             <input
-               className="form-input"
-               type="password"
-               name="password"
-               value={formData.password}
-               onChange={handleChange}
-               placeholder="Password"
-               required
-             />
-             <button className="form-button" type="submit">Login</button>
-           </form>
-}
+      
 { !formToggle && showSuccessAnimation && (
   <div className="success-animation">
     <p>You have successfully registered!</p>
@@ -206,7 +157,7 @@ const [formToggle,setFormToggle] = useState(true)
 )}
       { 
       
-      !formToggle &&
+      formToggle &&
              <form className="enrollment-form" onSubmit={handleSubmitRegister}>
              <input
                className="form-input"
