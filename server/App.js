@@ -5,9 +5,15 @@ const dotenv = require('dotenv').config();
 const cors = require('cors')
 const mainRoute = require('./routes/MainRoute');
 
-
+const corsOptions = {
+    origin: 'https://coding-ninja-frontend-pi.vercel.app',
+  };
 const app = express();
-app.use(cors({ origin: '*' }));
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'https://coding-ninja-frontend-pi.vercel.app');
+    next();
+  });
+app.use(cors({  origin: corsOptions}));
 app.use(express.json())
 
 //use cors, and mainRoute
