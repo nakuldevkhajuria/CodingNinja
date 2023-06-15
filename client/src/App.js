@@ -4,7 +4,9 @@ import AllCourses from './Components/All Courses/AllCourses';
 // import { MyForm } from './Components/Form/MyForm';
 import Home from './Components/Home/Home';
 import JoinUs from './Components/JoinUs/JoinUs';
+import JoinUsCourses from './Components/JoinUsCourses/JoinUsCourses';
 import News from './Components/News/News';
+import OneStop from './Components/OneStop/OneStop';
 // import Ninja from './Components/Ninja/Ninja';
 import Platform from './Components/Platform/Platform';
 
@@ -18,7 +20,9 @@ function App() {
     <Home/>
     {/* <Ninja/> */}
     <JoinUs />
+ 
     <Platform/>
+    {/* <OneStop/> */}
     <WorkExperience/>
  <AllCourses/>
  {/* <News/> */}

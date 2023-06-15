@@ -1,8 +1,12 @@
 import React from 'react'
 import './JoinUs.css'
+import JoinUsCourses from '../JoinUsCourses/JoinUsCourses'
 const JoinUs = () => {
     return (
-        <div >  <div className='section-title'>14,000+ CODING NINJAS TO INSPIRE YOU</div>
+        <div >  
+            <div className='section-title'>14,000+ CODING NINJAS TO INSPIRE YOU</div>
+            <JoinUsCourses/>
+
             <div className='stories-button'>
                 <button>
                     <span>

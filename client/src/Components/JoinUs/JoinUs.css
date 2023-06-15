@@ -146,11 +146,15 @@ margin-top: 10px;
     color: #292a31;
     font-family: Helvetica,Arial,sans-serif;
       line-height: 42px;
-  margin-top: 6rem;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+
       
       font-weight: 500;
       font-size: 32px;
   }
+
+ 
 
 @media (max-width:900px) {
     .fang-container{

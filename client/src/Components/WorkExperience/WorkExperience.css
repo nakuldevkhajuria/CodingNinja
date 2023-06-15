@@ -215,6 +215,8 @@ text-align: left;
   @media (max-width:800px) {
     .work-section{
       height: 53rem;
+      display: flex;
+      justify-content: center;
     }
     .work-container{
     

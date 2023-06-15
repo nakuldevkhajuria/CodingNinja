@@ -1,0 +1,55 @@
+.alumni {
+    display: flex;
+    border-radius: 10px;
+    max-width: 85%;
+    min-height: 80vh;
+    margin: 2rem auto;
+    overflow: hidden;
+  }
+  .alum {
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    flex-basis: 20%;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .expanded {
+    flex-basis: 80%;
+  }
+  .alum > p:nth-of-type(1) {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .alum > p:nth-of-type(2) {
+    text-align: start;
+    font-weight: 400;
+  }
+  .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+  }
+  .detail > p:nth-of-type(1) {
+    font-size: 1.2rem;
+   
+  }
+
+  .alum {
+    position: relative;
+  }
+  
+  .image-container-success-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .fixed-image {
+    width: 10rem; /* Adjust the width of the image as needed */
+    height: auto; /* Adjust the height of the image as needed */
+  }

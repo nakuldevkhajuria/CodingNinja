@@ -60,7 +60,7 @@ const Navbar = () => {
     const handleSubmitRegister = (event) => {
         event.preventDefault(); // Prevents the default form submission behavior
 
-        // Make the HTTP request
+        // Make the HTTP requests
         // fetch('https://coding-ninja-backend.vercel.app/api/user/register', {
         fetch('http://localhost:4000/api/user/register', {
             method: 'POST',
@@ -128,30 +128,22 @@ const Navbar = () => {
                     <div className='navbar-content-center'>
                         <div className='dropdown'>
                             Courses
-                            &nbsp; <img _ngcontent-serverapp-c80="" src="https://files.codingninjas.in/path-9515.svg" alt="dropdown-icon"></img>
+                            &nbsp; <img  src="https://files.codingninjas.in/path-9515.svg" alt="dropdown-icon"></img>
                             <div className="dropdown-content" style={{ top: '1.2rem', height: '35rem', width: '45rem' }}>
                               <WorkExperience/>
                                 <a href="/">   <button className="profile-option" onClick={handleLogout}>Logout</button></a>
 
                             </div>
                         </div>
-                        <div className='dropdown'>
-                            Scholorship<span>Upto 100% Off</span>
-                            &nbsp; <img _ngcontent-serverapp-c80="" src="https://files.codingninjas.in/path-9515.svg" alt="dropdown-icon"></img>
-                            <div className="dropdown-content" style={{ top: '1.2rem' }}>
-                                <a href="/"><button className="profile-option">nakul dev </button></a>
-                                <a href="/">   <button className="profile-option" onClick={handleLogout}>Logout</button></a>
-
-                            </div>
+                        <div className='dropdown' >
+                            Scholorship<span style={{whiteSpace:'nowrap'}}>Upto 100% Off</span>
+                            &nbsp; <img src="https://files.codingninjas.in/path-9515.svg" alt="dropdown-icon"></img>
+                            
                         </div>
                         <div className='dropdown'>
                             Community
                             &nbsp; <img _ngcontent-serverapp-c80="" src="https://files.codingninjas.in/path-9515.svg" alt="dropdown-icon"></img>
-                            <div className="dropdown-content" style={{ top: '1.2rem' }}>
-                                <a href="/"><button className="profile-option">nakul dev </button></a>
-                                <a href="/">   <button className="profile-option" onClick={handleLogout}>Logout</button></a>
-
-                            </div>
+                      
                         </div>
                         <div className='dropdown'>
                             Practice
@@ -241,13 +233,7 @@ const Navbar = () => {
                                 src="https://files.codingninjas.in/logo_variants-white-25005.png" />
                         </a>
                     </div>
-                    <div>
-                    <a href='#'>
-                                <button className='login-button' onClick={handleShowForm}>
-                                    <span>Login </span>
-                                </button>
-                            </a>
-                    </div>
+                  
                 </div>
 
             </div>
