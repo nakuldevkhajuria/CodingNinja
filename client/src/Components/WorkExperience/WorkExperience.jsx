@@ -19,6 +19,7 @@ const WorkExperience = () => {
     fetch('https://coding-ninja.vercel.app/api/user/register', {
       // fetch('http://localhost:4000/api/user/register', {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
       },
