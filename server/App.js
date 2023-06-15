@@ -17,7 +17,12 @@ app.use(cors({  origin: corsOptions}));
 app.use(express.json())
 
 //use cors, and mainRoute
-
+app.get('/api',(req,res)=>{
+    res.send('this is the yp')
+})
+app.get('/api', (req, res) => {
+    res.send('This is the homepage');
+  });
 app.use('/api/user',mainRoute)
 // app.get('/api/user/helo',(req,res)=>{
 //     res.send('helo')
