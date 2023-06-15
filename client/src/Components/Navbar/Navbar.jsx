@@ -30,7 +30,7 @@ const Navbar = () => {
         event.preventDefault(); // Prevents the default form submission behavior
 
         // Make the HTTP request
-        fetch('http://coding-ninja-8p8kab88z-nakuldevkhajuria.vercel.app//api/user/login', {
+        fetch('http://coding-ninja.vercel.app/api/user/login', {
         // fetch('http://localhost:4000/api/user/login', {
 
             method: 'POST',
@@ -61,7 +61,7 @@ const Navbar = () => {
         event.preventDefault(); // Prevents the default form submission behavior
 
         // Make the HTTP requests
-        fetch('http://https://coding-ninja-8p8kab88z-nakuldevkhajuria.vercel.app//api/user/register', {
+        fetch('http://coding-ninja.vercel.app/api/user/register', {
         // fetch('http://localhost:4000/api/user/register', {
             method: 'POST',
             headers: {
