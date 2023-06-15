@@ -218,9 +218,7 @@ text-align: left;
       display: flex;
       justify-content: center;
     }
-    .work-container{
     
-    }
     .work-content{
       /* text-align: center; */
       flex-direction: column;

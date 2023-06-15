@@ -16,8 +16,8 @@ const WorkExperience = () => {
     event.preventDefault(); // Prevents the default form submission behavior
 
     // Make the HTTP request
-    fetch('https://coding-ninja-backend-g5rnui0md-nakuldevkhajuria.vercel.app/api/user/register', {
-      // fetch('http://localhost:4000/api/user/register', {
+    // fetch('https://coding-ninja-backend-g5rnui0md-nakuldevkhajuria.vercel.app/api/user/register', {
+      fetch('http://localhost:4000/api/user/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -29,6 +29,7 @@ const WorkExperience = () => {
         // Handle the response from the server
         console.log(data);
         setShowSuccessAnimation(true);
+        setShowSuccessAnimation2(false)
         // Reset the form data
         setFormData({
           firstname: '',
@@ -37,13 +38,16 @@ const WorkExperience = () => {
           mobile: '',
           password: ''
         });
-        setTimeout(() => {
-          setShowSuccessAnimation(false);
-        }, 3000); // Change the duration (in milliseconds) as needed
+        // setTimeout(() => {
+        //   setShowSuccessAnimation(false);
+        // }, []); // Change the duration (in milliseconds) as needed
       })
       .catch((error) => {
         // Handle any errors
         console.error(error);
+        setTimeout(() => {
+          setShowSuccessAnimation2(true);
+        }, 1);
       });
   };
 
@@ -57,6 +61,7 @@ const WorkExperience = () => {
 
   const [showSuccessAnimation, setShowSuccessAnimation] = useState(false);
   //after we click on signup
+  const [showSuccessAnimation2, setShowSuccessAnimation2] = useState(false);
 
 
   
@@ -150,9 +155,14 @@ const [formToggle,setFormToggle] = useState(true)
         <button className="option-button"  onClick={ handleFormSignup}> Sign Up</button>
       </div>
       
-{ !formToggle && showSuccessAnimation && (
+{ !showSuccessAnimation2 && showSuccessAnimation && (
   <div className="success-animation">
     <p>You have successfully registered!</p>
+  </div>
+)}
+{  showSuccessAnimation2 && (
+  <div className="success-animation" style={{backgroundColor:'red'}}>
+    <p>You have not successfully registered!</p>
   </div>
 )}
       { 
