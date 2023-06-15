@@ -3,7 +3,7 @@ import './Platform.css'
 const Platform = () => {
   return (
     <div className='platform-section'>
-      <div className="platform-container">
+      <div className="platform-container" >
         <div className="platform-content">
           <div className='platform-cards'>
             <div>4.9</div>
@@ -11,17 +11,17 @@ const Platform = () => {
             <div>100+ reviews</div>
             <div>Facebook</div>
           </div>
-          <div className='platform-cards'>
+          <div className='platform-cards' >
             <div>4.9</div>
             <img alt='stars' lazyload="https://files.codingninjas.in/stars-9613.svg" src="https://files.codingninjas.in/stars-9613.svg" />
             <div>100+ reviews</div>
             <div>Facebook</div>
           </div>
-          <div className='platform-cards'>
+          <div className='platform-cards' >
             <div>50+</div>
             <div>Questions asked</div>
             <div>5000 answered</div>
-            <div>Quora</div>
+            <div id='hell'>Quora</div>
           </div>
         </div>
         {/* <div class="dynamicRoutingHomePage">

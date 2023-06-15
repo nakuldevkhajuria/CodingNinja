@@ -88,7 +88,7 @@ const News = () => {
 
   const display = showFirstPage ? Page1 : Page2;
   return (
-    <div className="news">
+    <div className="news" >
       <p>Coding Ninjas in the News</p>
       <div className="news-grid">
         {display.map((item, index) => (

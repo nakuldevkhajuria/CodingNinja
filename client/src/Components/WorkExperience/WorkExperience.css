@@ -130,7 +130,7 @@ text-align: left;
   }
 
   .form-container.blur {
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(1px);
     background-color: rgba(0, 0, 0, 0.5);
   }
   

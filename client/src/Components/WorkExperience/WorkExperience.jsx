@@ -16,8 +16,8 @@ const WorkExperience = () => {
     event.preventDefault(); // Prevents the default form submission behavior
 
     // Make the HTTP request
-    // fetch('https://coding-ninja-backend.vercel.app/api/user/register', {
-      fetch('http://localhost:4000/api/user/register', {
+    fetch('https://coding-ninja-backend-g5rnui0md-nakuldevkhajuria.vercel.app/api/user/register', {
+      // fetch('http://localhost:4000/api/user/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -93,7 +93,7 @@ const [formToggle,setFormToggle] = useState(true)
 
   return (
     <div>
-      <div className='work-section'>
+      <div className='work-section' >
         <div className="work-container">
           <div className='work-container-content'>
             <h4>What is your work experience?</h4>
