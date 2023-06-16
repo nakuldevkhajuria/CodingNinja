@@ -47,3 +47,8 @@
     height: 30px;
     
 }
+@media (max-width:800px) {
+   .platform-content div{
+    min-width: 230px;
+   }
+}

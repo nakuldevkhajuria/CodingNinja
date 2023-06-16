@@ -1,0 +1,16 @@
+.pay-accept {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 4rem;
+
+  }
+  .methods > img {
+    margin: 0 0.5rem;
+  }
+  @media (max-width:800px) {
+    .pay-accept{
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }

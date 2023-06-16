@@ -1,0 +1,112 @@
+.footer-top {
+    background-color: rgb(35, 38, 82);
+    display: flex;
+    padding: 4rem;
+    gap: 4rem;
+  font-family: 'Mulish','Mulish',Helvetica,Arial,sans-serif;
+  color: #e1e1e3;
+  }
+  .footer-top p {
+    text-align: start;
+  }
+  .f-logo {
+    max-width: 20vw;
+  }
+  .f-logo > p {
+    font-size: 0.9rem;
+    padding-left: 1.3rem;
+  }
+  .f-logo > img {
+    width: 100%;
+  }
+  .f-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+ 
+  .f-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .f-list p{
+    color: #e1e1e3;
+
+  }
+  .f-list ul li {
+    color: #e1e1e3;
+    text-align: start;
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
+    cursor: pointer;
+    position: relative;
+  }
+  .f-list ul li:hover,
+  .f-contact > p:hover,
+  .categories > span:hover {
+    color: rgb(250, 134, 25);
+  }
+  .f-list ul li::before,
+  .f-contact > p::before,
+  .categories > span::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(250, 134, 25);
+    transition: width 0.3s ease-in-out;
+  }
+  .f-list ul li:hover::before,
+  .f-contact > p:hover::before,
+  .categories > span:hover::before {
+    width: 100%;
+  }
+  .f-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .9rem;
+  }
+
+  .soc-link > img {
+    max-width: 3vw;
+    margin: 0.15rem;
+    cursor: pointer;
+  }
+  .f-contact {
+    display: flex;
+    gap: 1rem;
+    max-width: 20vw;
+    align-items: center;
+  }
+  .f-contact > img {
+    max-height: 1.5vw;
+  }
+  .f-contact > p {
+    font-size: 0.9rem;
+    position: relative;
+    cursor: pointer;
+  }
+  @media (max-width:800px) {
+    .f-socials{
+      margin-right: 3rem;
+    }
+    .footer-top{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+    }
+    .f-logo p{
+    white-space: wrap;
+    width: 120px;
+    position: relative;
+    right: 28px;
+    }
+    .f-options{
+      justify-content: center;
+      align-items: center;
+    }
+  }

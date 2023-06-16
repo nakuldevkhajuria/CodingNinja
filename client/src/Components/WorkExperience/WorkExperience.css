@@ -212,7 +212,7 @@ text-align: left;
     border-radius: 4px;
   }
   
-  @media (max-width:800px) {
+  @media (max-width:900px) {
     .work-section{
       height: 53rem;
       display: flex;

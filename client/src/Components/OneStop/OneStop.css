@@ -1,20 +1,128 @@
 .one-stop {
     background: rgb(247, 236, 236);
+  
     padding: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
+    margin: 2rem auto;
   }
   .one-stop > p {
     font-size: 1.2rem;
     color: black;
   }
+ .feature-bar ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+
+ }
+ .feature-bar ul li{
+  font-size: .93rem;
+ }
   .feature-bar > nav {
-    padding: 1rem;
+    padding: .3rem ;
     max-width: 70%;
     background-color: white;
     cursor: pointer;
-    margin: 2rem auto;
+    margin: 2rem auto 0 auto;
   }
   .feature-bar > nav ul li:hover {
     color: rgb(255, 123, 0);
+
     text-decoration: underline;
   }
+
+
+  .guided-prog {
+    display: flex;
+    max-width: 70%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  .guid-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    line-height: 69%;
+    
+  }
+  .guid-cont > p:nth-of-type(1) {
+    color: rgb(255, 208, 0);
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+  .guid-cont > p:nth-of-type(2) {
+    color: black;
+    font-size: 1.6rem;
+    text-align: start;
+    line-height: 90%;
+  }
+  .guid-cont > p:nth-of-type(3) {
+    color: rgb(27, 27, 27);
+    font-size: 0.8rem;
+    text-align: start;
+  }
+  .guid-cont > p:nth-of-type(4) {
+    color: rgb(27, 27, 27);
+    font-size: 0.8rem;
+    text-align: start;
+  }
+  .points ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 0.8rem;
+  }
+  .points ul li {
+    text-align: start;
+  }
+  .stats {
+    display: flex;
+    gap: 1rem;
+  }
+  .stat-in {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .stat-head {
+    font-size: 2rem;
+    color: rgb(27, 27, 27);
+    font-weight: 800;
+  }
+  .stat-desc {
+    font-size: 0.8rem;
+    color: rgb(27, 27, 27);
+    text-align: start;
+  }
+  .guid-img img {
+    width: 30vw;
+  }
+
+  
+@media (max-width: 570px) {
+  .feature-bar > nav ul {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem; */
+    flex-direction: column;
+   gap: 1rem;
+  }
+  .feature-bar ul{
+    padding: 0;
+    
+  }
+  .guided-prog {
+    max-width: 95%;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  .guid-img {
+    max-width: 90%;
+  }
+  .guid-img > img {
+    width: 100%;
+  }
+}
