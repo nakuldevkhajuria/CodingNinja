@@ -16,8 +16,8 @@ const WorkExperience = () => {
     event.preventDefault(); // Prevents the default form submission behavior
 
     // Make the HTTP request
-    // fetch('https://coding-ninja.vercel.app/api/user/register', {
-      fetch('http://localhost:4000/api/user/register', {
+    fetch('https://coding-ninja-backend.vercel.app/user/register', {
+      // fetch('http://localhost:4000/api/user/register', {
       method: 'POST',
       mode: 'no-cors',
       headers: {
