@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import './Navbar.css'
 import WorkExperience from '../WorkExperience/WorkExperience';
+import axios from 'axios';
 const Navbar = () => {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -30,16 +31,15 @@ const Navbar = () => {
         event.preventDefault(); // Prevents the default form submission behavior
 
         // Make the HTTP request
-        fetch('https://coding-ninja-backend.vercel.app/api/user/login', {
-        // fetch('http://localhost:4000/api/user/login', {
+        // fetch('https://coding-ninja-backend.vercel.app/api/user/login', {
+            axios.post('https://coding-ninja-backend.vercel.app/api/user/login', formData, {
+                //  axios.post('http://localhost:9000/api/user/login', formData, {
 
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        })
-            .then((response) => response.json())
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+              })
+            // .then((response) => response.json())
             .then((data) => {
                 // Handle the response from the server
                 console.log(data);
@@ -61,15 +61,13 @@ const Navbar = () => {
         event.preventDefault(); // Prevents the default form submission behavior
 
         // Make the HTTP requests
-        fetch('https://coding-ninja-backend.vercel.app/api/user/register', {
-        // fetch('http://localhost:4000/api/user/register', {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        })
+       
+            axios.post('https://coding-ninja-backend.vercel.app/api/user/register', formData, {
+            // axios.post('http://localhost:9000/api/user/register', formData, {
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+              })
             .then((response) => response.json())
             .then((data) => {
                 // Handle the response from the server

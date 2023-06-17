@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './WorkExperience.css'
+import axios from 'axios';
 const WorkExperience = () => {
 
   const [showForm, setShowForm] = useState(false); // State to toggle the form visibility
@@ -16,16 +17,15 @@ const WorkExperience = () => {
     event.preventDefault(); // Prevents the default form submission behavior
 
     // Make the HTTP request
-    fetch('https://coding-ninja-backend.vercel.app/user/register', {
-      // fetch('http://localhost:4000/api/user/register', {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then((response) => response.json())
+    // fetch('https://coding-ninja-backend.vercel.app/user/register', {
+      axios.post('https://coding-ninja-backend.vercel.app/api/user/register', formData, {
+
+      // axios.post('http://localhost:9000/api/user/register', formData, {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      })
+      // .then((response) => response.json())
       .then((data) => {
         // Handle the response from the server
         console.log(data);
